@@ -7,7 +7,7 @@ startCommand:
     properties:
       checkHost:
         type: string
-        description: Live free checker origin (no trailing slash). Tunnel is ephemeral.
-        default: https://march-clinic-sacramento-logos.trycloudflare.com
+        description: Live free checker origin (no trailing slash). Durable workers.dev host.
+        default: https://x402-checker.nock-for-mak.workers.dev
   commandFunction: |-
-    (config) => ({ command: 'node', args: ['server.js'], env: { X402_CHECK_HOST: config.checkHost || 'https://march-clinic-sacramento-logos.trycloudflare.com' } })
+    (config) => ({ command: 'node', args: ['server.js'], env: { X402_CHECK_HOST: config.checkHost || 'https://x402-checker.nock-for-mak.workers.dev' } })
