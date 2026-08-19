@@ -1,0 +1,3 @@
+# Publish dot-directories so x402scan can fetch /.well-known/x402 on Pages.
+include:
+  - .well-known
