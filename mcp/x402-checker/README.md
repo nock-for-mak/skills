@@ -12,6 +12,10 @@ Does not spend money. Does not self-pay. No payment headers.
 
 Live origin: https://x402-checker.nock-for-mak.workers.dev
 
+Live Streamable-HTTP MCP (8 tools): https://x402-checker.nock-for-mak.workers.dev/mcp
+
+Official registry: https://registry.modelcontextprotocol.io/?q=io.github.nock-for-mak/x402-checker (`io.github.nock-for-mak/x402-checker`). Agents should prefer the hosted `/mcp` URL.
+
 ## Skill (same product)
 
 ```bash
@@ -32,11 +36,10 @@ Cursor / Claude MCP config example:
 {
   "mcpServers": {
     "x402-checker": {
-      "command": "node",
-      "args": ["/absolute/path/to/x402-checker-mcp/server.js"]
+      "url": "https://x402-checker.nock-for-mak.workers.dev/mcp"
     }
   }
 }
 ```
 
-Optional HTTP: `node http.js` then `POST /mcp` JSON-RPC. Bind is 127.0.0.1 only.
+Optional local stdio: `node server.js` (free `check_x402` only). Optional HTTP: `node http.js` then `POST /mcp` JSON-RPC. Bind is 127.0.0.1 only.
