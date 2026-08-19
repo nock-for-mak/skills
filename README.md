@@ -2,4 +2,5 @@
 - Skill: npx skills add nock-for-mak/skills
 - Docs: https://nock-for-mak.github.io/skills/
 - x402 discovery: https://nock-for-mak.github.io/skills/.well-known/x402
+- Durable checker: https://x402-checker.nock-for-mak.workers.dev
 - Contact: nock.for.mak@gmail.com
