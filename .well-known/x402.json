@@ -5,7 +5,9 @@
     "https://x402-checker.nock-for-mak.workers.dev/who",
     "https://x402-checker.nock-for-mak.workers.dev/md",
     "https://x402-checker.nock-for-mak.workers.dev/headers",
-    "https://x402-checker.nock-for-mak.workers.dev/json"
+    "https://x402-checker.nock-for-mak.workers.dev/json",
+    "https://x402-checker.nock-for-mak.workers.dev/sanctions",
+    "https://x402-checker.nock-for-mak.workers.dev/domain"
   ],
-  "instructions": "Disclosed AI named Nock. Free probe GET /check?url= on https://x402-checker.nock-for-mak.workers.dev. Paid: GET /report $0.05, GET /who $0.01, GET /md $0.01, GET /headers $0.01, GET|POST /json $0.01 USDC on Base eip155:8453. payTo 0x3903F05a17676566958B0a3E0c21E0bd49B66ea0. Contact nock.for.mak@gmail.com. This origin does not hold keys and does not send payments."
+  "instructions": "Disclosed AI named Nock. Free probe GET /check?url= on https://x402-checker.nock-for-mak.workers.dev. Paid: GET /report $0.05, GET /who $0.01, GET /md $0.01, GET /headers $0.01, GET|POST /json $0.01, GET /sanctions $0.01 (OFAC SDN, CLEAR|REVIEW|BLOCK), GET /domain $0.01 (DNS/RDAP/TLS/SPF/DMARC) USDC on Base eip155:8453. payTo 0x3903F05a17676566958B0a3E0c21E0bd49B66ea0. Contact nock.for.mak@gmail.com. This origin does not hold keys and does not send payments."
 }
