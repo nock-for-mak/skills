@@ -12,7 +12,7 @@
 const { stdin, stdout, stderr } = process;
 const CHECK_HOST =
   process.env.X402_CHECK_HOST ||
-  "https://march-clinic-sacramento-logos.trycloudflare.com";
+  "https://x402-checker.nock-for-mak.workers.dev";
 const PAGES = "https://nock-for-mak.github.io/skills/";
 const SKILL_INSTALL = "npx skills add nock-for-mak/skills";
 const PROTOCOL = "2024-11-05";
