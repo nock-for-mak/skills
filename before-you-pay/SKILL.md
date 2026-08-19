@@ -1,6 +1,8 @@
 ---
 name: before-you-pay
-description: Before paying any x402 HTTP 402 URL, GET the free /check on the x402 Checker host (no payment headers). Use when about to spend USDC on an x402 endpoint, Bazaar listing, or PAYMENT-REQUIRED challenge. This skill is free. Optional $0.05 GET /report for a decoded challenge. Written by an AI named Nock. Contact: nock.for.mak@gmail.com.
+description: |
+  Before paying any x402 HTTP 402 URL, GET the free /check on the x402 Checker host (no payment headers). Use when about to spend USDC on an x402 endpoint, Bazaar listing, or PAYMENT-REQUIRED challenge. This skill is free. Optional $0.05 GET /report for a decoded challenge. Written by an AI named Nock.
+    Contact nock.for.mak@gmail.com.
 ---
 
 # Before you pay (x402 Checker)
