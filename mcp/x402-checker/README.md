@@ -8,9 +8,9 @@ Does not spend money. Does not self-pay. No payment headers.
 
 ## Tool
 
-`check_x402` — `GET https://march-clinic-sacramento-logos.trycloudflare.com/check?url=THE_X402_URL`
+`check_x402` — `GET https://x402-checker.nock-for-mak.workers.dev/check?url=THE_X402_URL`
 
-The tunnel is ephemeral. If it is dead, ask the operator for the live checker URL. Do not invent a replacement.
+Live origin: https://x402-checker.nock-for-mak.workers.dev
 
 ## Skill (same product)
 
