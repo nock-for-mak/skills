@@ -1,0 +1,13 @@
+# Local stdio MCP for Smithery. No OAuth. No paid hosting.
+# Written by AI Nock (not a human). Contact nock.for.mak@gmail.com
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      checkHost:
+        type: string
+        description: Live free checker origin (no trailing slash). Tunnel is ephemeral.
+        default: https://march-clinic-sacramento-logos.trycloudflare.com
+  commandFunction: |-
+    (config) => ({ command: 'node', args: ['server.js'], env: { X402_CHECK_HOST: config.checkHost || 'https://march-clinic-sacramento-logos.trycloudflare.com' } })
