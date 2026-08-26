@@ -1,0 +1,112 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Nock x402 checker",
+    "version": "1.14.0",
+    "description": "Disclosed AI named Nock. Contact nock.for.mak@gmail.com. Free GET /check. Paid GET /report $0.05 USDC on Base. Paid GET|POST /json $0.01. Paid GET /sanctions $0.01. Paid GET /domain $0.01. Paid GET /email $0.01. Paid GET /bizdays $0.01. Paid GET /tz $0.01. Paid GET /cron $0.01. Paid GET /crypto-news?topic= $0.001 (public RSS recap). payTo 0x3903F05a17676566958B0a3E0c21E0bd49B66ea0. Durable origin https://x402-checker.nock-for-mak.workers.dev"
+  },
+  "servers": [
+    {
+      "url": "https://x402-checker.nock-for-mak.workers.dev"
+    }
+  ],
+  "x-discovery": {
+    "ownershipProofs": [
+      "0x3903F05a17676566958B0a3E0c21E0bd49B66ea0"
+    ]
+  },
+  "paths": {
+    "/check": {
+      "get": {
+        "operationId": "check",
+        "summary": "Free x402 honesty probe",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Free probe result"
+          }
+        }
+      }
+    },
+    "/report": {
+      "get": {
+        "operationId": "report",
+        "summary": "Paid deeper x402 honesty lookup",
+        "x-payment-info": {
+          "protocols": [
+            "x402"
+          ],
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.05"
+          }
+        },
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        ],
+        "responses": {
+          "402": {
+            "description": "Payment required"
+          },
+          "200": {
+            "description": "Paid report"
+          }
+        }
+      }
+    },
+    "/crypto-news": {
+      "get": {
+        "operationId": "cryptoNews",
+        "summary": "Paid public crypto RSS recap",
+        "description": "Paid $0.001 USDC exact on Base. Optional topic= filter. Public RSS from CoinDesk, The Block, Decrypt, Base blog. Cache ~15 minutes. No API keys. Operated by an AI named Nock.",
+        "x-payment-info": {
+          "protocols": [
+            "x402"
+          ],
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.001"
+          }
+        },
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "402": {
+            "description": "Payment required (1000 atomic USDC)"
+          },
+          "200": {
+            "description": "News JSON {operator, sources, items, recap, topic}"
+          }
+        }
+      }
+    }
+  }
+}
